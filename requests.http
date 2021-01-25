@@ -1,3 +1,76 @@
 ### list users
 GET http://localhost:3000/users
 Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsx
+### list users
+GET http://localhost:3000/users?limit=2&offset=2
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsx
+
+### create user
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsxa
+
+  {
+    "username": "ramiro",
+    "password": "ramiro",
+    "tasks": ["cook", "study"],
+    "mierda": 1
+  }
+
+### update user
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsxa
+
+  {
+    "username": true,
+    "passwordx": "ramiro",
+    "tasks": ["cook", "study"]
+  }
+
+
+
+
+
+
+
+
+
+### list users
+GET http://localhost:3000/coffees
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsx
+
+### list users
+GET http://localhost:3000/coffees?offset=2&limit=2
+Content-Type: application/json
+### list user
+GET http://localhost:3000/coffees/8
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsxa
+
+###
+POST http://localhost:3000/coffees
+Content-Type: application/json
+Authorization: asdlAAD433dssdlLLLLdsxa
+
+  {
+    "name": "cafe oriente",
+    "brand": "baratos",
+    "flavors": [
+      "caro",
+      "barato"
+    ]
+  }
+###
+PATCH http://localhost:3000/coffees/3
+Content-Type: application/json
+
+{
+    "name": "ahora sin llawja"
+}
+###
+DELETE http://localhost:3000/coffees/2
+Content-Type: application/json
